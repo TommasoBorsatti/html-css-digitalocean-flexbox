@@ -164,6 +164,10 @@
     position: static
   }
 
+  .standard_box{
+    padding: 15px 0
+  }
+
  }
 
  /* --------------------------------- */
