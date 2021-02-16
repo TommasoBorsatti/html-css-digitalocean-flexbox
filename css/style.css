@@ -14,11 +14,37 @@
     background-color: #f3f5f9
   }
 
+  .bg-white{
+    background-color: #fff
+  }
+
   /* TYPO */
+
+  h2{
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #031c4e;
+    margin: 15px 0
+  }
 
   h5{
     font-size: 20px;
     color: #6f7b97
+  }
+
+  p{
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #77839C;
+  }
+
+  .box_p{
+    font-size: 14px;
+    color:#5c6a88;
+    line-height: 20px;
+    padding: 0;
   }
 
   /* MIX */
@@ -46,6 +72,22 @@
     margin: auto
   }
 
+  .title-box{
+    width: 90%;
+    padding: 0 20px;
+    margin: auto;
+  }
+
+  .standard-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    padding: 0 20px;
+    margin: auto;
+  }
+
   /* Partners Section */
 
   .sponsor-img{
@@ -54,12 +96,48 @@
     margin: 0 10px
   }
 
+  /* Deploy Section */
+
+  .menu_list{
+    flex-basis: 30%;
+    font-size: 22px;
+    line-height: 50px;
+    list-style: none;
+    border-left: 2px solid grey;
+    padding-left: 6px;
+    position:relative;
+    left:150px;
+    margin-bottom: 15px
+  }
+
+  .menu_list a{
+    text-decoration: none;
+    color:#5c6a88;
+  }
+
+  .box-container{
+    flex-basis: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  .standard_box{
+    flex-basis: calc(50% - 10px);
+    margin: 15px 0;
+    padding:0 5px
+  }
+
+
  /* MEDIA QUERY PER RESPONSIVE */
 
  /* --------------------------------- */
  /* < 996 PX */
 
  @media screen and (max-width: 996px){
+
+  /* PARTNERS SECTION */
 
   .partners-box{
     flex-wrap:wrap;
@@ -70,6 +148,20 @@
     flex-basis: calc((100% / 2) - 40px);
     display: block;
     margin: 0 10px;
+  }
+
+  /* DEPLOY SECTION */
+
+  .standard-container{
+    display: block
+  }
+
+  .box-container{
+    display: block
+  }
+
+  .menu_list{
+    position: static
   }
 
  }
@@ -85,4 +177,8 @@
 
   .sponsor-img{
     margin: auto
+ }
+
+ .title-box > p{
+   font-size: 16px
  }
