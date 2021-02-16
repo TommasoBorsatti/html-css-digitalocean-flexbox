@@ -7,3 +7,82 @@
   body{
     font-family: 'Roboto', sans-serifs;
   }
+
+  /* BACKGROUND COLORS */
+
+  .bg-lighter-blue{
+    background-color: #f3f5f9
+  }
+
+  /* TYPO */
+
+  h5{
+    font-size: 20px;
+    color: #6f7b97
+  }
+
+  /* MIX */
+
+  section{
+    padding: 30px 0
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partners-box{
+    margin: 20px 0
+  }
+
+  .main-container{
+    width: 80%;
+    margin: auto
+  }
+
+  /* Partners Section */
+
+  .sponsor-img{
+    flex-basis: calc((100% / 6) - 20px);
+    display: block;
+    margin: 0 10px
+  }
+
+ /* MEDIA QUERY PER RESPONSIVE */
+
+ /* --------------------------------- */
+ /* < 996 PX */
+
+ @media screen and (max-width: 996px){
+
+  .partners-box{
+    flex-wrap:wrap;
+    align-content: flex-start;
+  }
+
+  .sponsor-img{
+    flex-basis: calc((100% / 2) - 40px);
+    display: block;
+    margin: 0 10px;
+  }
+
+ }
+
+ /* --------------------------------- */
+ /* < 408 PX */
+
+ @media screen and (max-width: 408px){
+
+  .partners-box{
+    display: block;
+  }
+
+  .sponsor-img{
+    margin: auto
+ }
